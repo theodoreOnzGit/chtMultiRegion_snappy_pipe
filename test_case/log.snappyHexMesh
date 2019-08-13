@@ -1,0 +1,1728 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v1906                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v1906 OPENFOAM=1906
+Arch   : "LSB;label=32;scalar=64"
+Exec   : snappyHexMesh -overwrite
+Date   : Aug 13 2019
+Time   : 13:58:53
+Host   : LAPTOP-FK3MEHTI
+PID    : 2704
+I/O    : uncollated
+Case   : /home/theodore_ong/GitHub_OpenFoam_workspace/chtMultiRegion_snappy_pipe/test_case
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Read mesh in = 0 s
+
+Overall mesh bounding box  : (-1 -1 -1) (1 1 41)
+Relative tolerance         : 1e-06
+Absolute matching distance : 4.20951e-05
+
+Reading refinement surfaces.
+Read refinement surfaces in = 0 s
+
+Reading refinement shells.
+Read refinement shells in = 0 s
+
+Setting refinement level of surface to be consistent with shells.
+For geometry cylinder.stl detected 0 uncached triangles out of 476
+For geometry 20cm_sphere.stl detected 0 uncached triangles out of 5120
+Checked shell refinement in = 0.02 s
+
+Reading features.
+Read features in = 0 s
+
+
+Determining initial surface intersections
+-----------------------------------------
+
+Edge intersection testing:
+    Number of edges             : 8525
+    Number of edges to retest   : 0
+    Number of intersected edges : 0
+Edge intersection testing:
+    Number of edges             : 8525
+    Number of edges to retest   : 8525
+    Number of intersected edges : 1163
+Calculated surface intersections in = 0.02 s
+
+Initial mesh : cells:2500  faces:8525  points:3636
+Cells per refinement level:
+    0	2500
+
+Adding patches for surface regions
+----------------------------------
+
+Patch Type                Region                        
+----- ----                ------                        
+cylinder:
+
+3     wall                cylinder                      
+
+sphere:
+
+4     wall                sphere                        
+
+Added patches in = 0 s
+
+Edge intersection testing:
+    Number of edges             : 8525
+    Number of edges to retest   : 0
+    Number of intersected edges : 1163
+Selecting decompositionMethod none [1]
+
+Refinement phase
+----------------
+
+Found point (0.05 0.05 1.5) in cell 137 on processor 0
+Found point (0.05 0.05 30.5) in cell 1862 on processor 0
+
+Surface refinement iteration 0
+------------------------------
+
+Marked for refinement due to surface intersection          : 1166 cells.
+Marked for refinement due to curvature/regions             : 0 cells.
+Determined cells to refine in = 0 s
+Selected for refinement : 1166 cells (out of 2500)
+Edge intersection testing:
+    Number of edges             : 36524
+    Number of edges to retest   : 35168
+    Number of intersected edges : 3262
+Refined mesh in = 0.07 s
+After refinement surface refinement iteration 0 : cells:10662  faces:36524  points:15323
+Cells per refinement level:
+    0	1334
+    1	9328
+
+Surface refinement iteration 1
+------------------------------
+
+Marked for refinement due to surface intersection          : 5360 cells.
+Marked for refinement due to curvature/regions             : 0 cells.
+Determined cells to refine in = 0 s
+Selected for refinement : 6228 cells (out of 10662)
+Edge intersection testing:
+    Number of edges             : 176030
+    Number of edges to retest   : 175844
+    Number of intersected edges : 15360
+Refined mesh in = 0.33 s
+After refinement surface refinement iteration 1 : cells:54258  faces:176030  points:67745
+Cells per refinement level:
+    0	466
+    1	10912
+    2	42880
+
+Surface refinement iteration 2
+------------------------------
+
+Marked for refinement due to surface intersection          : 23048 cells.
+Marked for refinement due to curvature/regions             : 0 cells.
+Determined cells to refine in = 0 s
+Selected for refinement : 25344 cells (out of 54258)
+Edge intersection testing:
+    Number of edges             : 756686
+    Number of edges to retest   : 727548
+    Number of intersected edges : 61576
+Refined mesh in = 1.43 s
+After refinement surface refinement iteration 2 : cells:231666  faces:756686  points:293601
+Cells per refinement level:
+    0	466
+    1	8600
+    2	38344
+    3	184256
+
+Surface refinement iteration 3
+------------------------------
+
+Marked for refinement due to surface intersection          : 64 cells.
+Marked for refinement due to curvature/regions             : 232 cells.
+Determined cells to refine in = 0.19 s
+Selected for refinement : 368 cells (out of 231666)
+Edge intersection testing:
+    Number of edges             : 765974
+    Number of edges to retest   : 15984
+    Number of intersected edges : 62392
+Refined mesh in = 0.58 s
+After refinement surface refinement iteration 3 : cells:234242  faces:765974  points:297929
+Cells per refinement level:
+    0	466
+    1	8568
+    2	38496
+    3	184856
+    4	1856
+
+Surface refinement iteration 4
+------------------------------
+
+Marked for refinement due to surface intersection          : 32 cells.
+Marked for refinement due to curvature/regions             : 320 cells.
+Determined cells to refine in = 0.19 s
+Selected for refinement : 512 cells (out of 234242)
+Edge intersection testing:
+    Number of edges             : 778766
+    Number of edges to retest   : 22896
+    Number of intersected edges : 63952
+Refined mesh in = 0.61 s
+After refinement surface refinement iteration 4 : cells:237826  faces:778766  points:303777
+Cells per refinement level:
+    0	458
+    1	8600
+    2	38688
+    3	185112
+    4	3752
+    5	1216
+
+Surface refinement iteration 5
+------------------------------
+
+Marked for refinement due to surface intersection          : 0 cells.
+Marked for refinement due to curvature/regions             : 368 cells.
+Determined cells to refine in = 0.2 s
+Selected for refinement : 512 cells (out of 237826)
+Edge intersection testing:
+    Number of edges             : 791390
+    Number of edges to retest   : 25256
+    Number of intersected edges : 65456
+Refined mesh in = 0.54 s
+After refinement surface refinement iteration 5 : cells:241410  faces:791390  points:309473
+Cells per refinement level:
+    0	442
+    1	8696
+    2	38912
+    3	185208
+    4	4760
+    5	3392
+
+Surface refinement iteration 6
+------------------------------
+
+Marked for refinement due to surface intersection          : 0 cells.
+Marked for refinement due to curvature/regions             : 32 cells.
+Determined cells to refine in = 0.2 s
+Selected for refinement : 80 cells (out of 241410)
+Edge intersection testing:
+    Number of edges             : 793334
+    Number of edges to retest   : 6416
+    Number of intersected edges : 65424
+Refined mesh in = 0.53 s
+After refinement surface refinement iteration 6 : cells:241970  faces:793334  points:310329
+Cells per refinement level:
+    0	442
+    1	8696
+    2	38896
+    3	185304
+    4	4984
+    5	3648
+
+Surface refinement iteration 7
+------------------------------
+
+Marked for refinement due to surface intersection          : 0 cells.
+Marked for refinement due to curvature/regions             : 0 cells.
+Determined cells to refine in = 0.2 s
+Selected for refinement : 0 cells (out of 241970)
+Stopping refining since too few cells selected.
+
+
+Removing mesh beyond surface intersections
+------------------------------------------
+
+Setting cellZones according to locationsInMesh:
+Location : (0.05 0.05 1.5)
+    cellZone : pipe
+Location : (0.05 0.05 30.5)
+    cellZone : sphere
+
+For cellZone pipe found point (0.05 0.05 1.5) in global region 1 out of 2 regions.
+For cellZone sphere found point (0.05 0.05 30.5) in global region 1 out of 2 regions.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 87 at (-0.1 -0.1 0.365) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 88 at (0.25 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 92 at (-0.15 0.25 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 93 at (0.25 0.25 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 112 at (-0.1 -0.1 0.785) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 113 at (0.25 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 117 at (-0.15 0.25 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 118 at (0.25 0.25 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 137 at (-0.1 -0.1 1.205) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 138 at (0.25 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+Keeping all cells containing inside points
+Selected for keeping : 241970 cells.
+Edge intersection testing:
+    Number of edges             : 793334
+    Number of edges to retest   : 0
+    Number of intersected edges : 65424
+Setting cellZones according to locationsInMesh:
+Location : (0.05 0.05 1.5)
+    cellZone : pipe
+Location : (0.05 0.05 30.5)
+    cellZone : sphere
+
+For cellZone pipe found point (0.05 0.05 1.5) in global region 1 out of 2 regions.
+For cellZone sphere found point (0.05 0.05 30.5) in global region 1 out of 2 regions.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 87 at (-0.1 -0.1 0.365) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 88 at (0.25 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 92 at (-0.15 0.25 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 93 at (0.25 0.25 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 112 at (-0.1 -0.1 0.785) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 113 at (0.25 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 117 at (-0.15 0.25 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 118 at (0.25 0.25 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 137 at (-0.1 -0.1 1.205) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 138 at (0.25 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+Keeping all cells containing inside points
+Selected for keeping : 173962 cells.
+Edge intersection testing:
+    Number of edges             : 594118
+    Number of edges to retest   : 82144
+    Number of intersected edges : 65424
+
+Shell refinement iteration 0
+----------------------------
+
+Marked for refinement due to distance to explicit features : 0 cells.
+Marked for refinement due to refinement shells             : 0 cells.
+Determined cells to refine in = 1.41 s
+Selected for internal refinement : 10958 cells (out of 173962)
+Edge intersection testing:
+    Number of edges             : 821716
+    Number of edges to retest   : 476902
+    Number of intersected edges : 68220
+Refined mesh in = 1.13 s
+After refinement shell refinement iteration 0 : cells:250668  faces:821716  points:322871
+Cells per refinement level:
+    0	442
+    1	4704
+    2	12096
+    3	207298
+    4	7776
+    5	18352
+
+Shell refinement iteration 1
+----------------------------
+
+Marked for refinement due to distance to explicit features : 0 cells.
+Marked for refinement due to refinement shells             : 0 cells.
+Determined cells to refine in = 0.14 s
+Selected for internal refinement : 1274 cells (out of 250668)
+Edge intersection testing:
+    Number of edges             : 850102
+    Number of edges to retest   : 78470
+    Number of intersected edges : 69876
+Refined mesh in = 0.73 s
+After refinement shell refinement iteration 1 : cells:259586  faces:850102  points:333397
+Cells per refinement level:
+    0	442
+    1	4704
+    2	12096
+    3	207104
+    4	8248
+    5	26992
+
+Shell refinement iteration 2
+----------------------------
+
+Marked for refinement due to distance to explicit features : 0 cells.
+Marked for refinement due to refinement shells             : 0 cells.
+Determined cells to refine in = 0.15 s
+Selected for internal refinement : 160 cells (out of 259586)
+Edge intersection testing:
+    Number of edges             : 853750
+    Number of edges to retest   : 12648
+    Number of intersected edges : 69972
+Refined mesh in = 0.63 s
+After refinement shell refinement iteration 2 : cells:260706  faces:853750  points:334797
+Cells per refinement level:
+    0	442
+    1	4704
+    2	12096
+    3	206992
+    4	9096
+    5	27376
+
+Shell refinement iteration 3
+----------------------------
+
+Marked for refinement due to distance to explicit features : 0 cells.
+Marked for refinement due to refinement shells             : 0 cells.
+Determined cells to refine in = 0.14 s
+Selected for internal refinement : 16 cells (out of 260706)
+Edge intersection testing:
+    Number of edges             : 854086
+    Number of edges to retest   : 1656
+    Number of intersected edges : 69972
+Refined mesh in = 0.58 s
+After refinement shell refinement iteration 3 : cells:260818  faces:854086  points:334909
+Cells per refinement level:
+    0	442
+    1	4704
+    2	12080
+    3	207120
+    4	9096
+    5	27376
+
+Shell refinement iteration 4
+----------------------------
+
+Marked for refinement due to distance to explicit features : 0 cells.
+Marked for refinement due to refinement shells             : 0 cells.
+Determined cells to refine in = 0.12 s
+Selected for internal refinement : 0 cells (out of 260818)
+Stopping refining since too few cells selected.
+
+
+Dangling coarse cells refinement iteration 0
+--------------------------------------------
+
+Determined cells to refine in = 0.02 s
+Selected for refinement : 0 cells (out of 260818)
+Stopping refining since too few cells selected.
+
+
+Dangling coarse cells refinement iteration 0
+--------------------------------------------
+
+Determined cells to refine in = 0 s
+Selected for refinement : 0 cells (out of 260818)
+Stopping refining since too few cells selected.
+
+
+Refinement transition refinement iteration 0
+--------------------------------------------
+
+Determined cells to refine in = 0.01 s
+Selected for refinement : 0 cells (out of 260818)
+Stopping refining since too few cells selected.
+
+
+Splitting mesh at surface intersections
+---------------------------------------
+
+Introducing baffles for 69972 faces that are intersected by the surface.
+
+Setting cellZones according to locationsInMesh:
+Location : (0.05 0.05 1.5)
+    cellZone : pipe
+Location : (0.05 0.05 30.5)
+    cellZone : sphere
+
+For cellZone pipe found point (0.05 0.05 1.5) in global region 1 out of 4 regions.
+For cellZone sphere found point (0.05 0.05 30.5) in global region 1 out of 4 regions.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 52 at (-0.15 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 53 at (0.25 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 55 at (-0.15 0.25 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 56 at (0.225 0.225 0.28625) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 66 at (-0.15 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 67 at (0.25 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 69 at (-0.15 0.25 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 70 at (0.225 0.225 0.70625) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 80 at (-0.15 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 81 at (0.25 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+Edge intersection testing:
+    Number of edges             : 924058
+    Number of edges to retest   : 449016
+    Number of intersected edges : 139560
+Created baffles in = 1.08 s
+
+
+After introducing baffles : cells:260818  faces:924058  points:334909
+Cells per refinement level:
+    0	442
+    1	4704
+    2	12080
+    3	207120
+    4	9096
+    5	27376
+
+Introducing baffles to block off problem cells
+----------------------------------------------
+
+markFacesOnProblemCells : marked 130744 additional internal faces to be converted into baffles.
+Analyzed problem cells in = 0.44 s
+
+
+Introducing baffles to delete problem cells.
+
+Edge intersection testing:
+    Number of edges             : 1054802
+    Number of edges to retest   : 400224
+    Number of intersected edges : 139560
+Created baffles in = 0.87 s
+
+
+After introducing baffles : cells:260818  faces:1054802  points:334909
+Cells per refinement level:
+    0	442
+    1	4704
+    2	12080
+    3	207120
+    4	9096
+    5	27376
+Setting cellZones according to locationsInMesh:
+Location : (0.05 0.05 1.5)
+    cellZone : pipe
+Location : (0.05 0.05 30.5)
+    cellZone : sphere
+
+For cellZone pipe found point (0.05 0.05 1.5) in global region 1 out of 64360 regions.
+For cellZone sphere found point (0.05 0.05 30.5) in global region 1 out of 64360 regions.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 52 at (-0.15 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 53 at (0.25 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 55 at (-0.15 0.25 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 56 at (0.225 0.225 0.28625) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 66 at (-0.15 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 67 at (0.25 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 69 at (-0.15 0.25 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 70 at (0.225 0.225 0.70625) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 80 at (-0.15 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 81 at (0.25 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+Edge intersection testing:
+    Number of edges             : 1054802
+    Number of edges to retest   : 523136
+    Number of intersected edges : 139560
+
+Remove unreachable sections of mesh
+-----------------------------------
+
+Keeping all cells containing points 2((0.05 0.05 1.5) (0.05 0.05 30.5))
+Selected for keeping : 171724 cells.
+Edge intersection testing:
+    Number of edges             : 567788
+    Number of edges to retest   : 0
+    Number of intersected edges : 69800
+Split mesh in = 1.93 s
+
+
+After subsetting : cells:171724  faces:567788  points:225273
+Cells per refinement level:
+    0	0
+    1	0
+    2	12076
+    3	143336
+    4	5048
+    5	11264
+
+Introducing zones for interfaces
+--------------------------------
+
+Setting cellZones according to locationsInMesh:
+Location : (0.05 0.05 1.5)
+    cellZone : pipe
+Location : (0.05 0.05 30.5)
+    cellZone : sphere
+
+For cellZone pipe found point (0.05 0.05 1.5) in global region 0 out of 1 regions.
+For cellZone sphere found point (0.05 0.05 30.5) in global region 0 out of 1 regions.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 0 at (-0.15 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 1 at (0.25 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 2 at (-0.15 0.25 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 3 at (0.225 0.225 0.28625) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 4 at (-0.15 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 5 at (0.25 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 6 at (-0.15 0.25 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 7 at (0.225 0.225 0.70625) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 8 at (-0.15 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 9 at (0.25 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+Setting faceZones according to neighbouring cellZones:
+
+CellZones:
+    pipe	size:0
+    sphere	size:171724
+
+Edge intersection testing:
+    Number of edges             : 567788
+    Number of edges to retest   : 0
+    Number of intersected edges : 69800
+
+Handling cells with snap problems
+---------------------------------
+
+Introducing baffles for 69800 faces that are intersected by the surface.
+
+Setting cellZones according to locationsInMesh:
+Location : (0.05 0.05 1.5)
+    cellZone : pipe
+Location : (0.05 0.05 30.5)
+    cellZone : sphere
+
+For cellZone pipe found point (0.05 0.05 1.5) in global region 0 out of 1 regions.
+For cellZone sphere found point (0.05 0.05 30.5) in global region 0 out of 1 regions.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 0 at (-0.15 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 1 at (0.25 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 2 at (-0.15 0.25 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 3 at (0.225 0.225 0.28625) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 4 at (-0.15 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 5 at (0.25 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 6 at (-0.15 0.25 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 7 at (0.225 0.225 0.70625) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 8 at (-0.15 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 9 at (0.25 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+Edge intersection testing:
+    Number of edges             : 567788
+    Number of edges to retest   : 215568
+    Number of intersected edges : 69800
+Created baffles in = 1.2 s
+
+
+After introducing baffles : cells:171724  faces:567788  points:225273
+Cells per refinement level:
+    0	0
+    1	0
+    2	12076
+    3	143336
+    4	5048
+    5	11264
+
+Introducing baffles to block off problem cells
+----------------------------------------------
+
+markFacesOnProblemCells : marked 0 additional internal faces to be converted into baffles.
+Analyzed problem cells in = 0.25 s
+
+
+Introducing baffles to delete problem cells.
+
+Created baffles in = 0.03 s
+
+
+After introducing baffles : cells:171724  faces:567788  points:225273
+Cells per refinement level:
+    0	0
+    1	0
+    2	12076
+    3	143336
+    4	5048
+    5	11264
+Setting cellZones according to locationsInMesh:
+Location : (0.05 0.05 1.5)
+    cellZone : pipe
+Location : (0.05 0.05 30.5)
+    cellZone : sphere
+
+For cellZone pipe found point (0.05 0.05 1.5) in global region 0 out of 1 regions.
+For cellZone sphere found point (0.05 0.05 30.5) in global region 0 out of 1 regions.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 0 at (-0.15 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 1 at (0.25 -0.15 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 2 at (-0.15 0.25 0.3125) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 3 at (0.225 0.225 0.28625) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 4 at (-0.15 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 5 at (0.25 -0.15 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 6 at (-0.15 0.25 0.7325) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 7 at (0.225 0.225 0.70625) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 8 at (-0.15 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+--> FOAM Warning : 
+    From function void Foam::meshRefinement::findCellZoneInsideWalk(const pointField&, const labelList&, const labelList&, Foam::labelList&) const
+    in file meshRefinement/meshRefinementBaffles.C at line 1697
+    Cell 9 at (0.25 -0.15 1.1525) is inside cellZone sphere from locationInMesh (0.05 0.05 30.5) but already marked as being in zone pipe
+This can happen if your surfaces are not (sufficiently) closed.
+Edge intersection testing:
+    Number of edges             : 567788
+    Number of edges to retest   : 215568
+    Number of intersected edges : 69800
+
+Remove unreachable sections of mesh
+-----------------------------------
+
+Split mesh in = 0.81 s
+
+
+After subsetting : cells:171724  faces:567788  points:225273
+Cells per refinement level:
+    0	0
+    1	0
+    2	12076
+    3	143336
+    4	5048
+    5	11264
+
+Merge free-standing baffles
+---------------------------
+
+freeStandingBaffles : detected 4 free-standing baffles out of 4
+
+freeStandingBaffles : detected 4 planar (within 60 degrees) free-standing baffles out of 4
+
+Detected free-standing baffles : 4
+Edge intersection testing:
+    Number of edges             : 567784
+    Number of edges to retest   : 4
+    Number of intersected edges : 69796
+
+Introducing baffles to block off problem cells
+----------------------------------------------
+
+markFacesOnProblemCells : marked 0 additional internal faces to be converted into baffles.
+Analyzed problem cells in = 0.6 s
+
+
+Introducing baffles to delete problem cells.
+
+Created baffles in = 0.03 s
+
+
+After introducing baffles : cells:171724  faces:567784  points:225273
+Cells per refinement level:
+    0	0
+    1	0
+    2	12076
+    3	143336
+    4	5048
+    5	11264
+
+Remove unreachable sections of mesh
+-----------------------------------
+
+Merged free-standing baffles in = 0.11 s
+
+
+dupNonManifoldPoints : Found : 0 non-manifold points (out of 225273)
+Detected unsplittable baffles : 0
+
+Merge refined boundary faces
+----------------------------
+
+Merging 160 sets of faces.
+
+Edge intersection testing:
+    Number of edges             : 567592
+    Number of edges to retest   : 1584
+    Number of intersected edges : 69604
+
+Undo iteration 0
+----------------
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+
+Merging all points on surface that
+- are used by only two boundary faces and
+- make an angle with a cosine of more than 0.707107.
+
+Removing 144 straight edge points ...
+
+Edge intersection testing:
+    Number of edges             : 567592
+    Number of edges to retest   : 1328
+    Number of intersected edges : 69604
+
+Undo iteration 0
+----------------
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Refined mesh : cells:171724  faces:567592  points:225113
+Cells per refinement level:
+    0	0
+    1	0
+    2	12076
+    3	143336
+    4	5048
+    5	11264
+Writing mesh to time constant
+Wrote mesh in = 2.39 s.
+Mesh refined in = 19.87 s.
+
+Morphing phase
+--------------
+
+Duplicating 0 points on faceZones of type boundary
+Snapping to features in 10 iterations ...
+Constructing mesh displacer ...
+Using mesh parameters 
+{
+    maxNonOrtho     65;
+    maxBoundarySkewness 20;
+    maxInternalSkewness 4;
+    maxConcave      80;
+    minFlatness     0.5;
+    minVol          1e-13;
+    minTetQuality   1e-30;
+    minArea         -1;
+    minTwist        0.02;
+    minDeterminant  0.001;
+    minFaceWeight   0.02;
+    minVolRatio     0.01;
+    minTriangleTwist -1;
+    nSmoothScale    4;
+    errorReduction  0.75;
+}
+
+
+Checking initial mesh ...
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Detected 0 illegal faces (concave, zero area or negative cell pyramid volume)
+Checked initial mesh in = 0.56 s
+
+
+Smoothing patch points ...
+Smoothing iteration 0
+Found 0 non-manifold point(s).
+
+Scaling iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+
+Smoothing iteration 1
+Found 0 non-manifold point(s).
+
+Scaling iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+
+Smoothing iteration 2
+Found 0 non-manifold point(s).
+
+Scaling iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+
+Patch points smoothed in = 2 s
+
+
+
+Morph iteration 0
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+    non-zone points : attract to nearest of all non-zone surfaces
+    zone points     : attract to zone surface only
+
+Wanted displacement : average:0.00685253 min:4.82948e-07 max:0.0869206
+Calculated surface displacement in = 0.09 s
+
+
+Detecting near surfaces ...
+Overriding nearest with intersection of close gaps at 1 out of 70340 points.
+Overriding displacement on features :
+   implicit features    : true
+   explicit features    : false
+   multi-patch features : false
+
+Attraction:
+    linear   : max:(-3.16655e-16 -2.27115e-16 -0.0870008) avg:(-3.44283e-06 2.92453e-06 -4.88822e-07)
+    feature  : max:(2.41948e-05 7.5505e-06 -0.4) avg:(-1.75566e-06 -1.36289e-06 -4.58864e-06)
+Feature analysis : total master points :70340 of which attracted to :
+    feature point   : 1
+    feature edge    : 647
+    nearest surface : 69692
+    rest            : 0
+
+--> FOAM Warning : Displacement (-5.78432e-06 -2.20982e-05 6.18494e-07) at mesh point 215566 coord (0.378001 0.328069 39.845) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Displacement smoothed in = 0.88 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.63 s
+
+
+
+Morph iteration 1
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+    non-zone points : attract to nearest of all non-zone surfaces
+    zone points     : attract to zone surface only
+
+Wanted displacement : average:0.00635278 min:4.13663e-07 max:0.0751014
+Calculated surface displacement in = 0.11 s
+
+
+Detecting near surfaces ...
+Overriding nearest with intersection of close gaps at 0 out of 70340 points.
+Overriding displacement on features :
+   implicit features    : true
+   explicit features    : false
+   multi-patch features : false
+
+Attraction:
+    linear   : max:(-0.00322378 1.45213e-19 -0.0750322) avg:(-3.22866e-06 2.71674e-06 -4.58014e-07)
+    feature  : max:(-0.00144403 1.50726e-06 -0.399997) avg:(3.61577e-06 -3.91419e-06 -4.49168e-06)
+Feature analysis : total master points :70340 of which attracted to :
+    feature point   : 1
+    feature edge    : 681
+    nearest surface : 69658
+    rest            : 0
+
+--> FOAM Warning : Displacement (-3.00909e-05 -5.49933e-05 2.36029e-06) at mesh point 215566 coord (0.377995 0.328047 39.845) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Displacement smoothed in = 1.09 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.64 s
+
+
+
+Morph iteration 2
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+    non-zone points : attract to nearest of all non-zone surfaces
+    zone points     : attract to zone surface only
+
+Wanted displacement : average:0.00551258 min:4.516e-07 max:0.0470976
+Calculated surface displacement in = 0.1 s
+
+
+Detecting near surfaces ...
+Overriding nearest with intersection of close gaps at 0 out of 70340 points.
+Overriding displacement on features :
+   implicit features    : true
+   explicit features    : false
+   multi-patch features : false
+
+Attraction:
+    linear   : max:(-0.00202169 2.30896e-19 -0.0470542) avg:(-2.71997e-06 2.32298e-06 -3.02636e-07)
+    feature  : max:(0.0131193 1.95717e-06 -0.343262) avg:(3.43935e-06 -3.3879e-06 -4.8984e-06)
+Feature analysis : total master points :70340 of which attracted to :
+    feature point   : 1
+    feature edge    : 649
+    nearest surface : 69690
+    rest            : 0
+
+--> FOAM Warning : Displacement (-0.00011171 -0.000135532 -1.50422e-05) at mesh point 51999 coord (0.380344 0.331042 0.261579) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Displacement smoothed in = 1.06 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 1.09 s
+
+
+
+Morph iteration 3
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+    non-zone points : attract to nearest of all non-zone surfaces
+    zone points     : attract to zone surface only
+
+Wanted displacement : average:0.00450694 min:5.16112e-06 max:0.0142341
+Calculated surface displacement in = 0.1 s
+
+
+Detecting near surfaces ...
+Overriding nearest with intersection of close gaps at 0 out of 70340 points.
+Overriding displacement on features :
+   implicit features    : true
+   explicit features    : false
+   multi-patch features : false
+
+Attraction:
+    linear   : max:(4.05912e-05 0.0142213 0.000604108) avg:(-2.10331e-06 1.83584e-06 -5.14895e-08)
+    feature  : max:(-0.00690267 -4.96597e-07 -0.122789) avg:(2.48235e-06 -2.48449e-06 -2.93153e-06)
+Feature analysis : total master points :70340 of which attracted to :
+    feature point   : 1
+    feature edge    : 649
+    nearest surface : 69690
+    rest            : 0
+
+--> FOAM Warning : Displacement (-4.5056e-05 -2.66988e-05 -8.42036e-05) at mesh point 215388 coord (0.395235 0.307932 0.0368407) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Displacement smoothed in = 1.07 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.66 s
+
+
+
+Morph iteration 4
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+    non-zone points : attract to nearest of all non-zone surfaces
+    zone points     : attract to zone surface only
+
+Wanted displacement : average:0.00342156 min:9.28993e-07 max:0.0148085
+Calculated surface displacement in = 0.1 s
+
+
+Detecting near surfaces ...
+Overriding nearest with intersection of close gaps at 0 out of 70340 points.
+Overriding displacement on features :
+   implicit features    : true
+   explicit features    : false
+   multi-patch features : false
+
+Attraction:
+    linear   : max:(0.000635666 -2.84603e-19 0.0147949) avg:(-1.49768e-06 1.33995e-06 -6.22839e-08)
+    feature  : max:(0.00364476 -3.9131e-05 -0.0610341) avg:(1.75638e-06 -1.70688e-06 -2.4709e-06)
+Feature analysis : total master points :70340 of which attracted to :
+    feature point   : 1
+    feature edge    : 649
+    nearest surface : 69690
+    rest            : 0
+
+--> FOAM Warning : Displacement (-0.000153449 -0.000108493 -6.91644e-05) at mesh point 215388 coord (0.395189 0.307905 0.0367565) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Displacement smoothed in = 1.02 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.66 s
+
+
+
+Morph iteration 5
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+    non-zone points : attract to nearest of all non-zone surfaces
+    zone points     : attract to zone surface only
+
+Wanted displacement : average:0.0023115 min:3.93624e-07 max:0.0263454
+Calculated surface displacement in = 0.09 s
+
+
+Detecting near surfaces ...
+Overriding nearest with intersection of close gaps at 0 out of 70340 points.
+Overriding displacement on features :
+   implicit features    : true
+   explicit features    : false
+   multi-patch features : false
+
+Attraction:
+    linear   : max:(-0.000200189 -2.90692e-05 0.0263446) avg:(-9.83849e-07 8.98056e-07 -9.68007e-09)
+    feature  : max:(0.000722344 0.0263907 -0.0307043) avg:(1.33255e-06 -1.01028e-06 -2.08768e-06)
+Feature analysis : total master points :70340 of which attracted to :
+    feature point   : 2
+    feature edge    : 649
+    nearest surface : 69689
+    rest            : 0
+
+--> FOAM Warning : Displacement (-0.000228495 -0.000168828 -4.89037e-05) at mesh point 215388 coord (0.395036 0.307797 0.0366873) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Displacement smoothed in = 1.08 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 1.03 s
+
+
+
+Morph iteration 6
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+    non-zone points : attract to nearest of all non-zone surfaces
+    zone points     : attract to zone surface only
+
+Wanted displacement : average:0.00133772 min:9.50153e-08 max:0.0317053
+Calculated surface displacement in = 0.09 s
+
+
+Detecting near surfaces ...
+Overriding nearest with intersection of close gaps at 0 out of 70340 points.
+Overriding displacement on features :
+   implicit features    : true
+   explicit features    : false
+   multi-patch features : false
+
+Attraction:
+    linear   : max:(-0.000823872 -1.15342e-05 0.0316946) avg:(-5.51519e-07 4.83274e-07 8.66795e-08)
+    feature  : max:(-0.000937142 -0.00785168 -0.0309472) avg:(1.29429e-06 8.99465e-08 -1.59167e-06)
+Feature analysis : total master points :70340 of which attracted to :
+    feature point   : 2
+    feature edge    : 649
+    nearest surface : 69689
+    rest            : 0
+
+--> FOAM Warning : Displacement (-1.06499e-05 8.29718e-06 9.61116e-06) at mesh point 32417 coord (0.238464 -0.439532 39.7841) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Displacement smoothed in = 1.07 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 1.09 s
+
+
+
+Morph iteration 7
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+    non-zone points : attract to nearest of all non-zone surfaces
+    zone points     : attract to zone surface only
+
+Wanted displacement : average:0.000627257 min:7.28595e-08 max:0.0339441
+Calculated surface displacement in = 0.1 s
+
+
+Detecting near surfaces ...
+Overriding nearest with intersection of close gaps at 0 out of 70340 points.
+Overriding displacement on features :
+   implicit features    : true
+   explicit features    : false
+   multi-patch features : false
+
+Attraction:
+    linear   : max:(-0.000644761 -3.00598e-06 0.033938) avg:(-1.82308e-07 2.54734e-07 2.31362e-07)
+    feature  : max:(0.00176386 0.00454159 -0.0217576) avg:(8.10602e-07 3.13397e-08 -1.3793e-06)
+Feature analysis : total master points :70340 of which attracted to :
+    feature point   : 4
+    feature edge    : 649
+    nearest surface : 69687
+    rest            : 0
+
+--> FOAM Warning : Displacement (-5.42818e-05 9.4614e-05 3.9556e-06) at mesh point 32417 coord (0.238454 -0.439524 39.7841) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Displacement smoothed in = 1.06 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.64 s
+
+
+
+Morph iteration 8
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+    non-zone points : attract to nearest of all non-zone surfaces
+    zone points     : attract to zone surface only
+
+Wanted displacement : average:0.000215301 min:1.95403e-08 max:0.0364588
+Calculated surface displacement in = 0.09 s
+
+
+Detecting near surfaces ...
+Overriding nearest with intersection of close gaps at 0 out of 70340 points.
+Overriding displacement on features :
+   implicit features    : true
+   explicit features    : false
+   multi-patch features : false
+
+Attraction:
+    linear   : max:(0.000483594 -0.00148842 0.0364252) avg:(-1.94764e-07 1.2057e-08 3.51287e-07)
+    feature  : max:(-0.011538 -0.00856562 -0.00971169) avg:(-3.63905e-08 -2.13293e-07 -7.05124e-07)
+Feature analysis : total master points :70340 of which attracted to :
+    feature point   : 0
+    feature edge    : 651
+    nearest surface : 69689
+    rest            : 0
+
+--> FOAM Warning : Displacement (6.51998e-07 -1.16103e-07 7.59774e-06) at mesh point 219791 coord (0.37338 -0.0496737 -1.32806e-05) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Displacement smoothed in = 1.08 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 0.63 s
+
+
+
+Morph iteration 9
+-----------------
+Calculating patchDisplacement as distance to nearest surface point ...
+    non-zone points : attract to nearest of all non-zone surfaces
+    zone points     : attract to zone surface only
+
+Wanted displacement : average:4.40514e-05 min:2.83855e-08 max:0.0328649
+Calculated surface displacement in = 0.09 s
+
+
+Detecting near surfaces ...
+Overriding nearest with intersection of close gaps at 0 out of 70340 points.
+Overriding displacement on features :
+   implicit features    : true
+   explicit features    : false
+   multi-patch features : false
+
+Attraction:
+    linear   : max:(0.000435923 -0.0013417 0.0328346) avg:(1.26699e-07 1.96947e-07 2.33109e-07)
+    feature  : max:(0.0152789 0.00986378 -0.0116619) avg:(-9.30734e-08 -2.13723e-08 -6.58199e-07)
+Feature analysis : total master points :70340 of which attracted to :
+    feature point   : 0
+    feature edge    : 651
+    nearest surface : 69689
+    rest            : 0
+
+--> FOAM Warning : Displacement (3.05311e-16 -5.55112e-17 7.85477e-08) at mesh point 30705 coord (-0.0500005 -0.0500005 -1.9859e-06) points through the surrounding patch faces
+Smoothing displacement ...
+Iteration 0
+Iteration 10
+Iteration 20
+Displacement smoothed in = 0.89 s
+
+
+Moving mesh ...
+
+Iteration 0
+Moving mesh using displacement scaling : min:1  max:1
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Successfully moved mesh
+Moved mesh in = 1.05 s
+
+
+Repatching faces according to nearest surface ...
+Repatched 0 faces in = 0.48 s
+
+
+Edge intersection testing:
+    Number of edges             : 567592
+    Number of edges to retest   : 215500
+    Number of intersected edges : 69776
+Merging 20000 sets of faces.
+
+Edge intersection testing:
+    Number of edges             : 547416
+    Number of edges to retest   : 80552
+    Number of intersected edges : 49600
+
+Undo iteration 0
+----------------
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+
+Merging all points on surface that
+- are used by only two boundary faces and
+- make an angle with a cosine of more than 0.5.
+
+Removing 20040 straight edge points ...
+
+Edge intersection testing:
+    Number of edges             : 547416
+    Number of edges to retest   : 80552
+    Number of intersected edges : 49600
+
+Undo iteration 0
+----------------
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Snapped mesh : cells:171724  faces:547416  points:204897
+Cells per refinement level:
+    0	0
+    1	0
+    2	12076
+    3	143336
+    4	5048
+    5	11264
+Writing mesh to time constant
+Wrote mesh in = 4.7 s.
+Mesh snapped in = 27.12 s.
+Checking final mesh ...
+Checking faces in error :
+    non-orthogonality > 65  degrees                        : 0
+    faces with face pyramid volume < 1e-13                 : 0
+    faces with face-decomposition tet quality < 1e-30      : 0
+    faces with concavity > 80  degrees                     : 0
+    faces with skewness > 4   (internal) or 20  (boundary) : 0
+    faces with interpolation weights (0..1)  < 0.02        : 0
+    faces with volume ratio of neighbour cells < 0.01      : 0
+    faces with face twist < 0.02                           : 0
+    faces on cells with determinant < 0.001                : 0
+Finished meshing without any errors
+Finished meshing in = 47.52 s.
+End
+
